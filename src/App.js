@@ -35,6 +35,21 @@ function Map() {
 
   return (
     <>
+      <div className="fixed z-[800] m-2 flex flex-col right-0 bottom-32">
+        <button type="button" onClick={() => map.flyTo([-249.5712890625, 371.814453125])} className="bg-white rounded-t-lg border border-gray-300 p-1">
+          Tyrie centrale
+        </button>
+        <button type="button" onClick={() => map.flyTo([-257.2724609375, 286.4287109375])} className=" bg-white border border-gray-300 p-1">
+          Maguuma
+        </button>
+        <button type="button" onClick={() => map.flyTo([-369.8505859375, 502.03564453125])} className=" bg-white border border-gray-300 p-1">
+          Elona
+        </button>
+        <button type="button" onClick={() => map.flyTo([-802.37451171875, 226.69873046875])} className=" bg-white rounded-b-lg border border-gray-300 p-1">
+          Cantha
+        </button>
+      </div>
+
       <TileLayer
         attribution='Map data and imagery &copy; <a href="https://www.arena.net/fr">ArenaNet</a> | Additional imagery <a href="https://blog.thatshaman.com/">that_shaman</a> | Data from GW2RP FR community'
         url="https://gw2rp-hekataios-tiles.netlify.app/1/1/{z}/{x}/{y}.jpg"
