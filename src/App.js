@@ -27,7 +27,7 @@ function Map() {
     setBounds(new LatLngBounds(unproject([0, 0]), unproject(mapDimensions)));
   }, [map]);
 
-  const mapEvents = useMapEvents({
+  useMapEvents({
     click(e) {
       console.log(e);
     },
